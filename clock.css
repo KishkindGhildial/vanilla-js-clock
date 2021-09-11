@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0c1524;
+  color: white;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#digital {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#clkRim {
+  width: 500px;
+  height: 500px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+
+#sec {
+  height: 175px;
+  width: 2px;
+  background-color: #4cbcd8;
+  border-radius: 10px;
+  position: absolute;
+  left: calc(50% - 0.5px);
+  bottom: calc(50% + 1px);
+  transform-origin: bottom center;
+}
+
+#min {
+  height: 125px;
+  width: 5px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  left: calc(50% - 2px);
+  bottom: calc(50% + 1px);
+  transform-origin: bottom center;
+}
+
+#hour {
+  height: 75px;
+  width: 10px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  left: calc(50% - 4px);
+  bottom: calc(50% + 1px);
+  transform-origin: bottom center;
+}
+
+#dome {
+  height: 15px;
+  width: 15px;
+  background-color: #4cbcd8;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 7.5px);
+  bottom: calc(50% - 7.5px);
+  transform-origin: center;
+}
+
+/* #time1{
+
+} */
+
+h2 {
+  margin: 20px;
+  font-size: 3rem;
+}
+
+h5 {
+  padding-top: 20px;
+  font-size: 1rem;
+  margin-right: 30px;
+}
+
+span {
+  display: inline-block;
+  transition: 500ms;
+  border: solid white 1px;
+  border-radius: 5px;
+}
+
+/* .flip {
+  transition: 500ms;
+  transform: rotateX(180deg);
+  transform-origin: center;
+} */
+
+/* 
+.flip2 {
+  transition: 500ms;
+  transform: rotateX(180deg);
+  transform-origin: center;
+} */
