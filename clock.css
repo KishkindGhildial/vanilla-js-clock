@@ -1,9 +1,15 @@
+@font-face {
+  font-family: 'digital';
+  src: url('./font/digital.ttf');
+}
+
 body {
   margin: 0;
   width: 100vw;
   height: 100vh;
   background-color: #0c1524;
   color: white;
+  font-family: 'digital';
 }
 
 section {
@@ -74,26 +80,69 @@ section {
   transform-origin: center;
 }
 
-/* #time1{
+#time1 {
+  width: 5px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  border-radius: 10px;
+}
 
-} */
+#time2 {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  border-radius: 10px;
+}
+
+#time3 {
+  width: 5px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  border-radius: 10px;
+}
+
+#time4 {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  border-radius: 10px;
+}
+
+#digital {
+  margin: 0;
+  padding: 0;
+}
 
 h2 {
-  margin: 20px;
-  font-size: 3rem;
+  padding-left: 50px;
+  margin: 0;
+  margin-right: 20px;
+  font-size: 4.5rem;
+  letter-spacing: 10px;
 }
 
 h5 {
   padding-top: 20px;
-  font-size: 1rem;
-  margin-right: 30px;
+  font-size: 2rem;
+  margin-right: 20px;
+  letter-spacing: 5px;
 }
 
 span {
   display: inline-block;
   transition: 500ms;
-  border: solid white 1px;
-  border-radius: 5px;
 }
 
 /* .flip {
