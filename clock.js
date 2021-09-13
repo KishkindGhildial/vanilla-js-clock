@@ -5,8 +5,6 @@ let sec = time.getSeconds();
 let angSec = sec * 6;
 let angMin = min * 6 + sec * 0.1;
 let angHour = hour * 30 + min * 0.5;
-// document.getElementById('min').style.transform = `rotate(${angMin}deg)`;
-// document.getElementById('hour').style.transform = `rotate(${angHour}deg)`;
 
 setInterval(showTime, 1000);
 function showTime() {
@@ -36,26 +34,12 @@ function showTime() {
   document.getElementById('mm').innerText = min;
   document.getElementById('ss').innerText = sec;
   document.getElementById('am_pm').innerHTML = am_pm;
+  angSec = sec * 6;
+  angMin = min * 6 + sec * 0.1;
+  angHour = hour * 30 + min * 0.5;
 
   document.getElementById('sec').style.transform = `rotate(${angSec}deg)`;
-  angSec += 6;
   document.getElementById('min').style.transform = `rotate(${angMin}deg)`;
-  angMin += 0.1;
   document.getElementById('hour').style.transform = `rotate(${angHour}deg)`;
-  angHour += 0.00833;
-
-  // if (sec == 00) {
-  //   angMin += 6;
-  //   document.getElementById('min').style.transform = `rotate(${angMin}deg)`;
-  // }
-  // if (min == 00) {
-  //   angMin += 30;
-  //   document.getElementById('hour').style.transform = `rotate(${angHour}deg)`;
-  // }
 }
-
 showTime();
-
-// document.getElementById('ss').addEventListener('click', e => {
-//   e.classList.toggle('flip');
-// });

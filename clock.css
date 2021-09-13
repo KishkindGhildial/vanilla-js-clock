@@ -26,6 +26,8 @@ section {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 #clkRim {
@@ -34,6 +36,7 @@ section {
   border: 1px solid white;
   border-radius: 50%;
   position: relative;
+  transition: opacity 1s;
 }
 
 #sec {
@@ -120,15 +123,8 @@ section {
   border-radius: 10px;
 }
 
-#digital {
-  margin: 0;
-  padding: 0;
-}
-
 h2 {
-  padding-left: 50px;
-  margin: 0;
-  margin-right: 20px;
+  margin: 10px;
   font-size: 4.5rem;
   letter-spacing: 10px;
 }
@@ -136,24 +132,189 @@ h2 {
 h5 {
   padding-top: 20px;
   font-size: 2rem;
-  margin-right: 20px;
   letter-spacing: 5px;
 }
 
 span {
   display: inline-block;
+  width: 75px;
   transition: 500ms;
 }
 
-/* .flip {
-  transition: 500ms;
-  transform: rotateX(180deg);
-  transform-origin: center;
-} */
+@media (max-width: 768px) {
+  #clkRim {
+    width: 400px;
+    height: 400px;
+  }
 
-/* 
-.flip2 {
-  transition: 500ms;
-  transform: rotateX(180deg);
-  transform-origin: center;
-} */
+  #sec {
+    height: 150px;
+    width: 2px;
+  }
+
+  #min {
+    height: 100px;
+    width: 4px;
+  }
+
+  #hour {
+    height: 50px;
+    width: 7px;
+  }
+
+  #time1 {
+    width: 5px;
+    height: 25px;
+  }
+
+  #time2 {
+    width: 25px;
+    height: 5px;
+  }
+
+  #time3 {
+    width: 5px;
+    height: 25px;
+  }
+
+  #time4 {
+    width: 25px;
+    height: 5px;
+  }
+
+  span {
+    width: 65px;
+  }
+
+  h2 {
+    font-size: 4rem;
+    letter-spacing: 10px;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+  }
+}
+
+@media screen and (max-height: 768px) and (orientation: landscape) {
+  section {
+    flex-direction: row-reverse;
+  }
+  #clkRim {
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+  }
+
+  #sec {
+    height: 100px;
+    width: 1px;
+  }
+
+  #min {
+    height: 75px;
+    width: 2px;
+  }
+
+  #hour {
+    height: 25px;
+    width: 5px;
+  }
+
+  #time1 {
+    width: 3px;
+    height: 10px;
+  }
+
+  #time2 {
+    width: 10px;
+    height: 3px;
+  }
+
+  #time3 {
+    width: 3px;
+    height: 10px;
+  }
+
+  #time4 {
+    width: 10px;
+    height: 3px;
+  }
+
+  span {
+    width: 55px;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    letter-spacing: 7px;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  #clkRim {
+    opacity: 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  #sec {
+    height: 100px;
+    width: 1px;
+  }
+
+  #min {
+    height: 75px;
+    width: 2px;
+  }
+
+  #hour {
+    height: 25px;
+    width: 5px;
+  }
+
+  #time1 {
+    width: 3px;
+    height: 10px;
+  }
+
+  #time2 {
+    width: 10px;
+    height: 3px;
+  }
+
+  #time3 {
+    width: 3px;
+    height: 10px;
+  }
+
+  #time4 {
+    width: 10px;
+    height: 3px;
+  }
+
+  span {
+    width: 55px;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    letter-spacing: 7px;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+  }
+  #digital {
+    transform: translateY(-140%);
+    transition: transform 1s;
+    transition-delay: 1s;
+  }
+}
