@@ -1,6 +1,6 @@
 # Vanilla-js-clock
 
-<img width="1438" alt="Screenshot 2022-05-27 at 7 34 19 PM" src="https://user-images.githubusercontent.com/73109553/170715723-485c390a-7f0c-440e-b85c-6ad5aaf8e6a5.png">
+![clock](https://user-images.githubusercontent.com/73109553/170870855-7aa88ab7-bf8f-42cc-9611-b2c496516241.gif)
 
 - An Analogue/Digital clock made using HTML, CSS and JavaScript.
 
